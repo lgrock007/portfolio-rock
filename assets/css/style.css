@@ -90,3 +90,12 @@ section {
 .bold{
   font-weight: 600 !important;
 }
+
+/* skills */
+
+#skills{
+  padding-top: 7%;
+}
+label{
+  font-size: 20px;
+}

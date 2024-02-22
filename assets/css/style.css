@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif, Arial;
+}
+
+.navbar {
+  width: 100%;
+  position: sticky !important;
+  top: 0;
+  z-index: 10;
+}
+.navbar-brand {
+  font-weight: 600;
+}
+.nav-link {
+  color: white !important;
+  border-bottom: 1px solid transparent;
+}
+.nav-link:hover {
+  border-bottom: 1px solid white;
+}
+section {
+  min-height: 100vh;
+}
+/* home */
+#home > p {
+  position: absolute;
+  top: 50%;
+  font-size: 100px;
+  opacity: 1;
+  animation: text 3s ease-in-out;
+}
+#home span {
+  color: yellow;
+  border-right: 2px solid yellow; /* Cursor style */
+  animation: typing 3s steps(20, end),
+    blink-caret 0.5s step-end infinite alternate; /* Typing and blinking animation */
+}
+.container{
+  height: 100vh;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: yellow;
+  }
+}
+
+#home p {
+  font-size: 80px;
+}
+
+@media screen and (max-width: 576px) {
+  #home p {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #home p {
+    font-size: 100px;
+  }
+}
+
+/* about */
+
+.text-justify{
+  text-align: justify;
+}
+.description{
+  line-height: 30px;
+  font-size: 18px;
+}
+.bold{
+  font-weight: 600 !important;
+}

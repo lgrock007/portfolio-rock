@@ -25,6 +25,7 @@
 }
 section {
   min-height: 100vh;
+  height: 100%;
 }
 /* home */
 #home > p {
@@ -94,8 +95,53 @@ section {
 /* skills */
 
 #skills{
-  padding-top: 7%;
+  padding-top: 5%;
 }
 label{
   font-size: 20px;
 }
+
+
+/* projects */
+
+/* .card-image{
+  position: relative;
+}
+.card{
+  border-radius: 25px !important;
+}
+#projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4; 
+  top: 0;
+  left: 0;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #4070f4;
+  bottom: -40px;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+} */
+
+

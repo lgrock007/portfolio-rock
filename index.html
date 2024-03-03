@@ -142,7 +142,7 @@
             <div class="container my-lg-5 my-4 py-lg-4 py-5">
                 <h1 class="my-lg-4 pt-lg-3 pt-5 text-center display-2 bold">Projects</h1>
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-12">
+                    <!-- <div class="col-lg-4 col-md-4 col-12">
                                     <div class="card">
                                         <div class="card-body">
                                             <span class="overlay"></span>
@@ -204,12 +204,74 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                 -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/img/learn and grow.png" class="card-img-top" alt="Learn & Grow">
+                                <div class="card-body">
+                                    <h5 class="card-title">Learn & Grow</h5>
+                                    <p class="card-text">Learn and Grow Frontend is a dynamic online platform designed
+                                        to enhance learning experiences. With its intuitive interface and rich
+                                        multimedia content, users can explore a wide range of educational materials
+                                        seamlessly, fostering an engaging environment for knowledge acquisition and
+                                        growth.</p>
+
+
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://lgrock007.github.io/learn-grow/" class="btn btn-primary"
+                                        target="_blank">On Live</a>
+                                    <a href="https://github.com/lgrock007/learn-grow" class="btn btn-secondary"
+                                        target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/img/gmail-login.png" class="card-img-top" alt="Gmail - Login">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gmail - Login</h5>
+                                    <p class="card-text">The Gmail login page is a user-friendly interface providing
+                                        secure access to email services. Designed with simplicity and functionality in
+                                        mind, it offers a seamless experience for users to conveniently sign in and
+                                        manage their email accounts.</p>
+
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://lgrock007.github.io/Gmail-Login/" class="btn btn-primary"
+                                        target="_blank">On Live</a>
+                                    <a href="https://github.com/lgrock007/Gmail-Login" class="btn btn-secondary"
+                                        target="_blank">Source Code</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./assets/img/landing_page.png" class="card-img-top" alt="Gmail - Login">
+                                <div class="card-body">
+                                    <h5 class="card-title">Landing Page</h5>
+                                    <p class="card-text">Edu Sync offers a simple landing page dedicated to kickstarting your programming journey. This non-responsive website provides curated resources and information, prioritizing accessibility for beginners eager to learn.</p>
+
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://lgrock007.github.io/Landing-Page/" class="btn btn-primary"
+                                        target="_blank">On Live</a>
+                                    <a href="https://github.com/lgrock007/Landing-Page" class="btn btn-secondary"
+                                        target="_blank">Source Code</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- add code here -->
+                    </div>
+                </div>
         </section>
         <!-- end projects -->
 
         <section id="contact">
-            
+
         </section>
 
     </div>
@@ -220,46 +282,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const texts = ['Techy', 'Designer', 'Programmer', 'Freelancer'];
-            let count = 0;
-            let index = 0;
-            let currentText = '';
-            let letter = '';
 
-            type(); // Start typing when the page loads
-
-            function type() {
-                if (count === texts.length) {
-                    count = 0;
-                }
-                currentText = texts[count];
-                letter = currentText.slice(0, ++index);
-
-                document.querySelector('#home span').textContent = letter;
-
-                if (letter.length === currentText.length) {
-                    setTimeout(erase, 2000); // Wait 2 seconds before erasing
-                } else {
-                    setTimeout(type, 100); // Type speed
-                }
-            }
-
-            function erase() {
-                setTimeout(function () {
-                    if (index > 0) {
-                        letter = currentText.slice(0, --index);
-                        document.querySelector('#home span').textContent = letter;
-                        erase();
-                    } else {
-                        count++;
-                        setTimeout(type, 1000); // Wait 1 second before typing next word
-                    }
-                }, 100);
-            }
-        });
-    </script>
 
     <!-- jquery  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
